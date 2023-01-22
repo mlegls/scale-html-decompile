@@ -17,7 +17,7 @@ function gen(c,l) {
 
 const gen_ant= c=> gen(c,"antd");
 
-execSync("echo 'html, component' > comps.csv");
+execSync("echo 'component,html' > comps.csv");
 comps.forEach(c => {
   // let out = gen_ant(c);
   let out
@@ -27,7 +27,7 @@ comps.forEach(c => {
     out = "!!EXCEPTION!!"
     console.log(`${c} failed with ${e}`);
   }
-  execSync(`echo '${out},${c}' >> comps.csv`);
+  execSync(`echo '${c},${out}' >> comps.csv`);
 });
 
 //console.log(gen_ant("Button"));

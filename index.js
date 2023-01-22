@@ -24,7 +24,7 @@ function gen(c, l) {
 var gen_ant = function gen_ant(c) {
   return gen(c, "antd");
 };
-(0, _child_process.execSync)("echo 'html, component' > comps.csv");
+(0, _child_process.execSync)("echo 'component,html' > comps.csv");
 comps.forEach(function (c) {
   // let out = gen_ant(c);
   var out;
@@ -34,7 +34,7 @@ comps.forEach(function (c) {
     out = "!!EXCEPTION!!";
     console.log("".concat(c, " failed with ").concat(e));
   }
-  (0, _child_process.execSync)("echo '".concat(out, ",").concat(c, "' >> comps.csv"));
+  (0, _child_process.execSync)("echo '".concat(c, ",").concat(out, "' >> comps.csv"));
 });
 
 //console.log(gen_ant("Button"));
