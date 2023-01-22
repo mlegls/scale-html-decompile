@@ -1,2 +1,0 @@
-import React from "react";import {Affix} from "antd";import * as RS from "react-dom/server";
-  function Appl() {; return (<div><Affix>Sample</Affix></div>)};export default () => RS.renderToNodeStream(<Appl />);

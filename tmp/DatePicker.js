@@ -13,11 +13,10 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function Appl() {
   ;
-  return /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_antd.Affix, null, "Sample"));
+  return /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_antd.DatePicker, null, "Sample"));
 }
 ;
 var _default = function _default() {
-  return RS.renderToNodeStream( /*#__PURE__*/_react["default"].createElement(Appl, null));
+  return RS.renderToString( /*#__PURE__*/_react["default"].createElement(Appl, null));
 };
 exports["default"] = _default;
-
