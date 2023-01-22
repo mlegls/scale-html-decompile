@@ -1,2 +1,2 @@
-include(tsx.m4)IMF(react,React);IMDF(antd,version);IMF(react-dom/server,* as RS);
-  RFC(Genversion,,div,,<version></version>);export default () => RS.renderToStaticMarkup(<Genversion />);
+include(tsx.m4)IMF(react,React);IMDF(antd,Affix);IMF(react-dom/server,* as RS);
+  RFC(Appl,,div,,<Affix>Sample</Affix>);export default () => RS.renderToNodeStream(<Appl />);

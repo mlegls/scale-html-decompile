@@ -1,2 +1,2 @@
-import React from "react";import {version} from "antd";import * as RS from "react-dom/server";
-  function Genversion() {; return (<div><version></version></div>)};export default () => RS.renderToStaticMarkup(<Genversion />);
+import React from "react";import {Affix} from "antd";import * as RS from "react-dom/server";
+  function Appl() {; return (<div><Affix>Sample</Affix></div>)};export default () => RS.renderToNodeStream(<Appl />);
